@@ -1,4 +1,4 @@
-#PROJET
+# Projet
 Développer une tondeuse à gazon automatique, destinée
 aux surfaces rectangulaires.
 La tondeuse peut être programmée pour parcourir l'intégralité de la surface.
@@ -32,7 +32,7 @@ ne bouge que lorsque la première a exécuté intégralement sa série d'instruc
 Lorsqu'une tondeuse achève une série d'instruction, elle communique sa position et son
 orientation.
 
-#TEST
+# TEST
 Le fichier suivant est fourni en entrée :
 ```text
 5 5
