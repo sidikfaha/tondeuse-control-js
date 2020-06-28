@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+
+<style>
+
+    .main{
+        display: flex;
+        align-items: stretch;
+        font-family: "DejaVu Sans Mono", "Consolas", serif;
+        font-size: 14px;
+    }
+
+    .main > div {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    #run{
+        padding: auto;
+        width: 200px;
+        background-color: #0050a0;
+        border: none;
+        color: #fff;
+        height: 80px;
+        margin: 20px auto;
+    }
+
+    .success{
+        color: #00a050;
+    }
+
+</style>
+
+<div class="main">
+
+    <div style="height: 70vh;">
+        <textarea name="" id="script-content" style="height: 100%; width: 100%"></textarea>
+    </div>
+
+    <div id="console-content" style="padding: 10px; background-color: rgba(0,0,0,0.85); color: #d9d9d9;height: 70vh;">
+
+    </div>
+
+</div>
+
+<button id="run">Executer le script</button>
+
+<script src="src/js/main.js" ></script>
+<script>
+
+    document.querySelector("#run").addEventListener('click', () => {
+        new Runner().exec()
+    })
+
+</script>
+
+</body>
+</html>
